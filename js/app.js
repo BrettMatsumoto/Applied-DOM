@@ -220,9 +220,9 @@
    *   passing 2 additional arguments
    *     event, 'light-green'
    */
-  btn12.addEventListener('click', function(event){
-    setLight12Class(event, 'light-green')
-  })
+  btn12.addEventListener('click', function(event) {
+    setLight12Class(event, 'light-green');
+  });
   /*
    * Add a click event listener to btn13
    * the handler method will be an anonymous function expression
@@ -236,9 +236,9 @@
    *   invoke this function expression passing 2 arguments
    *     event, 'light-green'
    */
-  btn13.addEventListener('click', function(event){
+  btn13.addEventListener('click', function(event) {
     setMyLightClass.bind(this)(event, 'light-green');
-  })
+  });
   /*
    * Add a click event listener to btn14
    * the handler method will be a function expression
@@ -246,7 +246,7 @@
    * on the setMyLightGreen function
    */
 
-   btn14.addEventListener('click', setMyLightGreen.bind(btn14))
+  btn14.addEventListener('click', setMyLightGreen.bind(btn14));
 
   /*
    * Add a click event listener to btn15
@@ -256,7 +256,5 @@
    * Hint: Do not declare a new function expression as an event handler.
    */
 
-   btn15.addEventListener('click', setMyLightClass.bind(btn15, event, 'light-green'));
-
-
+  btn15.addEventListener('click', setMyLightClass.bind(btn15, event, 'light-green'));
 })(window);
