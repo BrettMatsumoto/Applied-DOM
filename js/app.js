@@ -183,7 +183,7 @@
    * will invoke the setLight10Green function
    */
   btn10.addEventListener('click', function() {
-    setLight10Green;
+    setLight10Green();
   });
 
   /*
